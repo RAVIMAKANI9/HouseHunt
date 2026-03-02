@@ -1,0 +1,7 @@
+{{ define "flash-messages" }}
+  {{ if gt (len .Flashes) 0 }}
+    {{ range .Flashes }}
+      {{ . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
